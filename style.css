@@ -1,0 +1,50 @@
+:root{--ink:#182636;--muted:#596777;--accent:#245ca5;--line:#e1e7ed;--sans:Arial,"Noto Sans KR",sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:#fff;color:var(--ink);font:14px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.page{width:min(1040px,calc(100% - 64px));margin:auto}
+.skip{position:fixed;top:-80px;left:20px;background:var(--ink);color:white;padding:8px 14px;z-index:10}.skip:focus{top:12px}
+.header{height:68px;display:flex;align-items:center;justify-content:flex-end;border-bottom:1px solid var(--line)}
+.dot{color:var(--accent)}
+nav{display:flex;gap:26px;font-size:12px;font-weight:600}nav a{padding:10px 0;color:var(--muted)}
+.profile{display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:30px;padding:35px 0 30px;align-items:center}
+.eyebrow,.detail-label,.index,.project-number,.project-category,.section-caption span{font:10px/1.5 var(--sans);letter-spacing:1px;font-weight:600}
+.eyebrow{color:var(--accent);margin:0 0 10px}
+h1{font-size:40px;letter-spacing:-1.5px;line-height:1.2;margin:0 0 13px;font-weight:700}
+.native-name{font-size:18px;color:var(--muted);font-weight:400;letter-spacing:0;margin-left:10px;white-space:nowrap}
+.intro{font-size:17px;margin:0 0 7px;line-height:1.5}
+.body-copy{color:var(--muted);margin:0;line-height:1.75;font-size:13px}
+.interests{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:15px 0 0}
+.interests li{font-size:10px;color:var(--accent);background:#edf3fa;border:1px solid #e0e9f5;border-radius:4px;padding:3px 8px}
+.profile-aside{display:flex;align-items:flex-start;gap:16px;border-left:1px solid var(--line);padding-left:20px}.portrait-link{flex:0 0 82px}.portrait{display:block;width:82px;height:auto;border-radius:4px}.profile-details{min-width:0;font-size:11px}.scholar-link{display:block;margin-top:8px}.profile-details p{margin:5px 0 14px}.profile-details .detail-label{color:var(--muted);font-size:9px;margin:0 0 4px}.profile-details a{overflow-wrap:anywhere}
+.section{display:grid;grid-template-columns:135px minmax(0,1fr);gap:25px;border-top:1px solid var(--line);padding:23px 0}
+.section-label{display:flex;align-items:baseline;gap:10px}.index{font-size:10px;color:#8794a2}
+h2{font-size:15px;letter-spacing:-.2px;font-weight:600;margin:0}
+.education-entry + .education-entry{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.education-entry h3{font-size:14px;line-height:1.5;margin:0 0 2px;font-weight:600}
+.education-entry p{font-size:12px;color:var(--muted);margin:0}
+.education-entry .text-link{margin-top:4px}
+.section-caption{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:600;margin:0 0 13px}.section-caption span{color:#718094;font-size:9px}
+.project{display:grid;grid-template-columns:50px minmax(0,1fr) 29%;column-gap:16px;border-top:1px solid var(--line);padding:17px 0}
+.project-top{grid-column:1;grid-row:1 / span 5;display:flex;flex-direction:column;gap:9px;padding-top:3px}.project-number{color:#8694a4;font-size:10px}.project-category{font-size:8px;line-height:1.6;letter-spacing:.5px;color:var(--muted)}
+.project h3{grid-column:2;font-size:12px;letter-spacing:.3px;line-height:1.4;color:var(--accent);font-weight:700;margin:0 0 4px}
+.project-subtitle{grid-column:2;font-size:15px;line-height:1.45;font-weight:600;letter-spacing:-.2px;margin:0 0 6px}
+.authors{grid-column:2;font-size:11px;line-height:1.6;color:var(--muted);margin:0 0 6px}.authors strong{color:var(--ink);font-weight:600}
+.project-description{grid-column:2;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
+.project-footer{grid-column:2;display:flex;align-items:center;gap:15px;margin-top:9px;font-size:10px}.contribution{color:var(--muted)}
+.text-link{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600}
+.featured{border:1px solid #dbe5f1;background:#f6f9fd;border-radius:5px;padding:17px 15px;margin:0 0 4px;grid-template-columns:35px minmax(0,1fr) 29%}
+.project-figure{grid-column:3;grid-row:1 / span 6;align-self:center;display:block;min-width:0;color:var(--muted)}
+.project-figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px;background:white}
+.project-figure span{display:block;margin-top:5px;font-size:9px;text-align:right}
+.project-figure:hover img{border-color:var(--accent)}
+.publication:last-child{padding-bottom:0}
+.contact-heading{font-size:19px;letter-spacing:-.5px;margin:0 0 4px;font-weight:600}
+.email{display:inline-flex;align-items:center;gap:16px;font-size:13px;margin-top:9px}
+footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);font-size:10px;color:var(--muted);padding:15px 0 22px}
+@media(max-width:700px){.page{width:calc(100% - 36px)}.header{height:58px}nav{gap:19px}.profile{grid-template-columns:1fr;gap:18px;padding:25px 0}.profile-aside{border-left:0;border-top:1px solid var(--line);padding:16px 0 0;gap:18px;align-items:center}.profile-details p{margin:3px 0 9px}.profile-details a{font-size:11px}.portrait-link{flex-basis:86px}.portrait{width:86px}.eyebrow{font-size:8px}h1{font-size:33px}.native-name{font-size:16px}.intro{font-size:15px}.section{grid-template-columns:1fr;gap:12px;padding:20px 0}.section-caption{margin-bottom:10px;font-size:12px}.project{grid-template-columns:43px minmax(0,1fr);column-gap:12px}.featured{grid-template-columns:32px minmax(0,1fr);padding:14px 11px}.project-top{grid-column:1 / -1;grid-row:auto;flex-direction:row;justify-content:space-between;margin-bottom:8px;padding:0}.project>h3,.project-subtitle,.authors,.project-description,.project-footer{grid-column:1 / -1}.project-category{font-size:8px;letter-spacing:.3px}.project-subtitle{font-size:14px}.project-description{font-size:11px}.authors{font-size:10px}.contact .body-copy{font-size:12px}.project-figure{grid-column:1 / -1;grid-row:auto;margin-top:14px;width:100%;max-width:380px;justify-self:center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.page{width:100%}.header,footer{display:none}.profile{padding-top:0}.project{break-inside:avoid}.section{padding:16px 0}a{color:var(--ink)}}
