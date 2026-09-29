@@ -34,7 +34,7 @@ h2{font-size:15px;letter-spacing:-.2px;font-weight:600;margin:0}
 .project-subtitle{grid-column:2;font-size:15px;line-height:1.45;font-weight:600;letter-spacing:-.2px;margin:0 0 6px}
 .authors{grid-column:2;font-size:11px;line-height:1.6;color:var(--muted);margin:0 0 6px}.authors strong{color:var(--ink);font-weight:600}
 .project-description{grid-column:2;font-size:12px;line-height:1.6;color:var(--muted);margin:0}
-.project-footer{grid-column:2;display:flex;align-items:center;gap:15px;margin-top:9px;font-size:10px}.contribution{color:var(--muted)}
+.project-footer{grid-column:2;display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin-top:9px;font-size:10px}.contribution{color:var(--muted)}
 .text-link{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600}
 .featured{border:1px solid #dbe5f1;background:#f6f9fd;border-radius:5px;padding:17px 15px;margin:0 0 4px;grid-template-columns:35px minmax(0,1fr) 29%}
 .project-figure{grid-column:3;grid-row:1 / span 6;align-self:center;display:block;min-width:0;color:var(--muted)}
