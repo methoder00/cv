@@ -4,9 +4,9 @@ Open `index.html` in a browser, or serve this directory with `python -m http.ser
 This is a standalone static website; no build or dependencies are required.
 
 Edit the profile, projects, and email in `index.html`; edit appearance in `style.css`.
-The detailed Robotics / Embodied AI internship CV is `internship.html`, linked from the homepage, with page-specific styles in `internship.css`. It shares the existing portrait, research figures, and base styles. Its research descriptions and selected results refer to the three linked papers; degree dates, employment, availability, and individual implementation responsibilities are omitted until confirmed. CRePE's NeurIPS 2026 status is also listed on https://bispl-website.github.io/publications/.
+The detailed Robotics / Embodied AI internship CV is `internship.html`, linked from the homepage, with page-specific styles in `internship.css`. It shares the existing portrait, research figures, and base styles. Its research descriptions and selected results refer to the three linked papers; employment, availability, and individual implementation responsibilities are omitted until confirmed. CRePE's NeurIPS 2026 status is also listed on https://bispl-website.github.io/publications/.
 CRePE and G4S titles, authors, and descriptions were checked against https://arxiv.org/abs/2605.12938 and https://arxiv.org/abs/2605.09984. DPP links to the existing project page.
-The affiliation and email come from prior manuscript conversations. Education is listed using the BISPL people page (https://bispl-website.github.io/people/): KAIST M.S. student and Hanyang B.S., EE. Dates, advisor, employment history, and CV download are omitted until confirmed.
+The affiliation and email come from prior manuscript conversations. Education is listed using the BISPL people page (https://bispl-website.github.io/people/): KAIST M.S. student and Hanyang B.S., EE. The user confirmed the education dates on October 7, 2026: KAIST from September 2025 to present; Hanyang from 2015 to 2024. Advisor, employment history, and CV download are omitted until confirmed.
 
 To publish, upload `index.html`, `internship.html`, `style.css`, `internship.css`, and `assets/` together to a static host. GitHub Pages: https://methoder00.github.io/cv/ (published from the main branch). Detailed CV: https://methoder00.github.io/cv/internship.html.
 
