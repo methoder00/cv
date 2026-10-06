@@ -86,24 +86,7 @@
                 <span>View figure ↗</span>
               </a>
             </div>
-            <p class="cv-summary">Dynamic Predictive Planning reuses manipulation skills learned from static demonstrations to interact with moving targets, without additional training on dynamic data.</p>
-            <ul class="cv-details">
-              <li><strong>Problem:</strong> World-action models can lose responsiveness to target relocation as execution advances, even when the required manipulation skill is already learned.</li>
-              <li><strong>Approach:</strong> Predict interaction timing and target motion, synthesize a counterfactual RGB-D observation in a familiar robot context, then connect the canonical plan to the actual robot state and refine the remaining actions.</li>
-              <li><strong>Evaluation:</strong> Simulation in RoboTwin 2.0 covers bimanual grasping, pick-and-place, and extended multi-stage tasks. Separate real-robot experiments evaluate moving-object pickup and ball interception.</li>
-            </ul>
-            <div class="cv-results">
-              <p class="cv-detail-label">SELECTED SIMULATION RESULTS · TASK SUCCESS RATE</p>
-              <table>
-                <caption>FastWAM (Refresh-24) compared with FastWAM + DPP on the same dynamic task evaluations.</caption>
-                <thead><tr><th scope="col">Task</th><th scope="col">FastWAM baseline</th><th scope="col">FastWAM + DPP</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">T1 · Bimanual grasp</th><td>10.00%</td><td><strong>83.33%</strong></td></tr>
-                  <tr><th scope="row">T2 · Pick-and-place</th><td>33.33%</td><td><strong>80.73%</strong></td></tr>
-                </tbody>
-              </table>
-              <p class="cv-result-note">T1: 300 trials per method; T2: 192 trials per method. Both use the same pretrained FastWAM backbone; DPP adds planning without dynamic-data training. <a href="https://arxiv.org/html/2609.33172v1">Evaluation details ↗</a></p>
-            </div>
+            <p class="cv-summary">DPP enables dynamic manipulation with world-action models trained on static demonstrations. It estimates when an interaction will occur and where a moving target will be, then constructs a counterfactual observation that places the predicted target in a familiar robot context. The generated plan is connected to the robot's actual state and refined during execution, improving performance in simulation and real-robot experiments without additional training on dynamic data.</p>
           </article>
 
           <article class="cv-project" aria-labelledby="crepe-title">
@@ -120,13 +103,7 @@
                 <span>View figure ↗</span>
               </a>
             </div>
-            <p class="cv-summary">A geometric interface for video world models that unifies camera motion, lens geometry, and scene structure beyond conventional pinhole cameras.</p>
-            <ul class="cv-details">
-              <li><strong>Problem:</strong> Camera encodings based only on ray direction do not locate scene content along a ray, and pinhole assumptions limit control under wide-angle and fisheye lenses.</li>
-              <li><strong>Approach:</strong> Represent each image token as a depth-aware distribution along its Unified Camera Model ray and integrate rotary positional information along the curved path in a query view.</li>
-              <li><strong>Model:</strong> A lightweight Geometric Attention Adapter on a frozen video diffusion transformer, with geometry supervision during training.</li>
-              <li><strong>Outcome:</strong> Improved camera and lens fidelity across pinhole, wide-angle, and fisheye settings, with zero-shot transfer to unseen real videos and geometry-conditioned generation through Radial MixForcing.</li>
-            </ul>
+            <p class="cv-summary">CRePE introduces a depth-aware positional encoding for camera-controlled video generation across pinhole, wide-angle, and fisheye lenses. It models each image token as a distribution along its camera ray and integrates positional information along the curved path induced in another view. A lightweight adapter applies this encoding to a frozen video diffusion transformer, improving camera and lens fidelity while supporting zero-shot transfer and externally supplied geometry for scene-conditioned generation.</p>
           </article>
 
           <article class="cv-project" aria-labelledby="g4s-title">
@@ -143,13 +120,7 @@
                 <span>View figure ↗</span>
               </a>
             </div>
-            <p class="cv-summary">An explicit, geometry-aware framework for completing missing regions of dynamic scenes and building expandable 4D representations.</p>
-            <ul class="cv-details">
-              <li><strong>Problem:</strong> Generative scene completion can introduce inconsistent geometry, while radiance-based reconstruction requires expensive optimization.</li>
-              <li><strong>Approach:</strong> Identify missing geometric regions, refine generated target-view geometry using source-view anchors, and stitch reliable newly revealed regions into an explicit 4D mesh.</li>
-              <li><strong>Outcome:</strong> Improved geometric consistency, iterative scene expansion, novel-view rendering, and 4D scene editing.</li>
-              <li><strong>Reported runtime:</strong> Under 10 minutes on one NVIDIA RTX 5090 for one-step scene expansion, under the paper's experimental setup.</li>
-            </ul>
+            <p class="cv-summary">G4S builds geometrically grounded 4D scenes by completing only missing geometric regions. It refines geometry inferred from generated target views using source-view geometry as an anchor, then stitches reliable newly revealed regions into an explicit dynamic mesh. This region-based process improves geometric consistency and reduces reconstruction cost, enabling iterative scene expansion, novel-view rendering, and 4D editing.</p>
           </article>
         </div>
       </section>
